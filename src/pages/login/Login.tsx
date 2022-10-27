@@ -1,17 +1,17 @@
 import React from "react";
 import Form from "../../components/form/Form";
-import { Container } from "./styles";
+import { Container, ImagemContainer } from "./styles";
 import Image from './../../assets/question.svg'
 
 function Login() {
   return (
     <Container>
-      <div>
+      <ImagemContainer>
         <img
           src={Image}
           alt=""
         />
-      </div>
+      </ImagemContainer>
 
       <Form />
 

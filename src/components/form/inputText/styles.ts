@@ -38,8 +38,3 @@ export const Input = styled.input`
 
 `
 
-// // export const HelperTex = styled.span`
-// //   font-size: 0.75rem;
-// //   font-weight: 400;
-// //   color: white;
-// `

@@ -1,9 +1,10 @@
 import React, { useState, useCallback} from 'react';
-import { FormLogin, Submit, Title } from './styles';
+import { FormLogin, Title } from './styles';
 import InputText from './inputText/InputText';
 import InputCheckbox from './inputCheckbox/InputCheckbox';
 import { userLogin } from '../../models/UserLogin';
 import { listUser } from '../../json/ListUser';
+import Button from '../button/Button';
 
 function Form(){
 
@@ -91,9 +92,8 @@ function Form(){
 
          />
         </form>
-        {/* <button type="submit" form='formLogin'>Enviar</button> */}
 
-        <Submit type='submit' form='formLogin' disabled={isSubmitDisabled()}>Entrar</Submit>
+        <Button type='submit' form='formLogin' disabled={isSubmitDisabled()}>Entrar</Button>
       </FormLogin>
   );
 };

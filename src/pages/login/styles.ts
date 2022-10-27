@@ -11,15 +11,6 @@ export const Container = styled.div`
   gap: 2rem;
   margin: 0 auto;
   
-  div {
-    width: 100%;
-    height: 100%;
-    
-    img {
-      width: 90%;
-      height: 90%;
-    }
-  }
 
 
   //mobile
@@ -28,8 +19,25 @@ export const Container = styled.div`
     grid-template-columns: 1fr;
     grid-template-rows: 200px 1fr;
     gap: 1rem;
+  }
+}
+`;
 
-      img {
+export const ImagemContainer = styled.div `
+    width: 100%;
+    height: 100%;
+    
+    img {
+      display: block;
+      margin: 3rem auto;
+      width: 80%;
+      height: 90%;
+    }
+
+
+      //mobile
+  @media(max-width: 876px){
+    img {
         position:absolute;
         right: -200px; 
         top: -60px;
@@ -37,5 +45,4 @@ export const Container = styled.div`
         overflow: hidden;
     }
   }
-}
-`;
+`
