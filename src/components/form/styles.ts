@@ -2,11 +2,11 @@ import styled from 'styled-components';
 
 export const Title = styled.h1`
     font-size: 2.5rem;
-    margin-top: 6rem;
+    margin-top: 3rem;
 `;
 
 export const FormLogin = styled.div`
-padding: 2rem;
+    padding: 1rem 2em;
 
 span {
    display: block;
@@ -17,7 +17,7 @@ span {
 
 
 form {
-  margin-top: 4rem;
+  margin-top: 3rem;
 
   label {
     margin-top: 12px;
@@ -32,14 +32,14 @@ form {
 
 @media(min-width: 2220px){
   &{
-    padding-top: 10rem;
+    padding: 4rem 2rem;
   }
 }
 
 
 @media(max-width: 996px){
     & {
-    margin-top: -30px;
+    margin-top: 4px;
     width: 80%;
 
     span {
@@ -48,26 +48,29 @@ form {
       right: 30px;
     }
 
-    form {
-    }
   }
 }
 `
 
 export const Submit = styled.button`
-    width: 426px;
-    height: 56px;
-    padding: 0.75rem 2rem;
-    margin-top: 70px;
+    /* width: 435px;
+    padding: 0.75rem 1rem; */
+    width: 430px;
+    padding: 0.90rem 1rem;
+    height: 57px;
+    margin-top: 30px;
     color: #fff;
     font-weight: bold;
     font-size: 16px;
     font-family: 'Inter';
     background-color:#3168F6;
     text-transform:uppercase;
+    cursor: pointer;
 
     border: none;
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+
+    
 
 `

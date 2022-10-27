@@ -1,31 +1,24 @@
-import React, { ReactNode } from "react";
-import {Input, InputContainer } from "./styles";
+import React, { InputHTMLAttributes, ReactNode } from "react";
 
 import { EnvelopeSimple, LockSimple } from 'phosphor-react'
 
+import {Input, InputContainer } from "./styles";
 
-interface Props {
-  value?: string;
-  placeholder: string;
-  type: string;
-  max?: number;
-  ref?: ReactNode;
-}
 
-const InputText = ({ value, placeholder, type, max, ref }: Props) => {
+
+interface Props extends InputHTMLAttributes<HTMLInputElement> {}
+
+const InputText: React.FC<Props>=(props) => {
 
 
   return (
     <InputContainer>
+
       <span className="icon">
-        {type === 'email' ? (<EnvelopeSimple  size={24}/>) : (<LockSimple  size={24}/>)}
+        {props.value === 'email' ? (<EnvelopeSimple  size={24}/>) : (<LockSimple  size={24}/>)}
       </span>
-      <Input
-        value={value}
-        placeholder={placeholder}
-        type={type}
-        max={max}
-      />
+
+      <Input {...props}  />
       {/* <HelperText error={error}>{helperText}</HelperText> */}
     </InputContainer>
   );

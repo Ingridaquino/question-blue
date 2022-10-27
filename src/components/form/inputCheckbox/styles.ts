@@ -28,20 +28,17 @@ export const CheckboxInput = styled.input`
     display: inline-block;
     cursor: pointer;
 
-    &:checked {
-      background-color: #252B4E;
-    }
-
-    & > .check::after {
+    &:checked::after{
+      /* background-color: #252B4E; */
       top: 5px;
       left: 9px;
       background: yellow;
-      height: 10px;
+      height: 20px;
       width: 5px;
       content: '';
       border: solid white;
       border-width: 0 3px 3px 0;
-
+  
       transform:rotate(45deg);
       -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);

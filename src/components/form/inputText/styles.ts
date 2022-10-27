@@ -1,8 +1,7 @@
 import styled from "styled-components"
 
 export const InputContainer = styled.div`
-      width: 390px;
-      padding: 0.75rem 1.25rem;
+      padding: 0.70rem 1.2rem;
       margin: 1rem 0 2rem 0;
       background-color: #252b4e;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -17,7 +16,7 @@ export const InputContainer = styled.div`
 `
 
 export const Input = styled.input`
-      width: 390px ;
+      width: 390px;
       padding: .50rem 0;
       background-color: transparent;
       display: inline-block;
@@ -36,10 +35,11 @@ export const Input = styled.input`
         text-align: start;
         display: block;
       }
+
 `
 
-export const HelperTex = styled.span`
-  font-size: 0.75rem;
-  font-weight: 400;
-  color: white;
-`
+// // export const HelperTex = styled.span`
+// //   font-size: 0.75rem;
+// //   font-weight: 400;
+// //   color: white;
+// `
