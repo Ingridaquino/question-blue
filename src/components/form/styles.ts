@@ -69,7 +69,23 @@ export const Submit = styled.button`
 
     border: none;
     border-radius: 4px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: filter 0.1s;
+
+    &:hover{
+      filter: opacity(0.8);
+    }
+
+    &:not(:disabled):hover {
+      background-color:#3168F6;
+      filter: opacity(0.8);
+    }
+
+    &:disabled {
+      opacity: 0.7;
+      cursor: not-allowed;
+    }
+
 
     
 

@@ -37,8 +37,16 @@ function Form(){
       },
       [dados]
       );
+
       
-    
+      
+    function isSubmitDisabled(){
+      const {email, password} = dados;
+
+      if(!email && !password){
+        return true
+      }
+    }
                               
   return (
       <FormLogin>
@@ -85,7 +93,7 @@ function Form(){
         </form>
         {/* <button type="submit" form='formLogin'>Enviar</button> */}
 
-        <Submit type='submit' form='formLogin'>Entrar</Submit>
+        <Submit type='submit' form='formLogin' disabled={isSubmitDisabled()}>Entrar</Submit>
       </FormLogin>
   );
 };
