@@ -3,16 +3,20 @@ import Login from './pages/login/Login'
 
 import dark from './styles/themes/dark'
 
-import GlobalStyle from './styles/global'
+
+import { DefaultTheme, ThemeProvider } from 'styled-components'
+import { Base } from './styles/global'
 
 export function App() {
-
-
+  // const theme = useState<DefaultTheme>
+ 
   return (
-    <div className="App">
-       <GlobalStyle />
-        <Login />
-    </div>
+    <ThemeProvider theme={dark}>
+      <div className="App">
+        <Base />
+          <Login />
+      </div>
+    </ThemeProvider>
   )
 }
 

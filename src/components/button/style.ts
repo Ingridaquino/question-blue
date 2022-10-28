@@ -12,11 +12,11 @@ export const Submit = styled.button`
     padding: 0.90rem 1rem;
     height: 57px;
     margin-top: 30px;
-    color: #fff;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1rem;
     font-family: 'Inter';
-    background-color:#3168F6;
+    background-color:${props => props.theme.colors.sky};
+    color: ${props => props.theme.colors.text};
     text-transform:uppercase;
     cursor: pointer;
 
@@ -30,7 +30,7 @@ export const Submit = styled.button`
     }
 
     &:not(:disabled):hover {
-      background-color:#3168F6;
+      background-color: ${props => props.theme.colors.sky};
       filter: opacity(0.8);
     }
 

@@ -1,17 +1,18 @@
 import { createGlobalStyle } from "styled-components";
 
-export default createGlobalStyle `
+export const Base = createGlobalStyle `
 
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    user-select: none; 
   }
 
   body {
-    background-color:#121423;
+    background-color:${props => props.theme.colors.background};
     font-size: 14px;
-    color:#E1E1E6;
+    color:${props => props.theme.colors.text};
     font-family: 'Inter', sans-serif; 
   }
 
