@@ -1,18 +1,19 @@
 import React from 'react';
-import { CheckboxInput, ContainerCheckbox } from './styles';
+import { Check, CheckboxInput, ContainerCheckbox, Label } from './styles';
 
 function InputCheckbox() {
   return (
     <ContainerCheckbox>
-      <label htmlFor='checkbox'>
-      <CheckboxInput 
-        type='checkbox'
-        name='checkbox'
-        id='checkbox'
-      />
-        Manter-me conectado
-      <div className='check'></div>
-      </label>
+      <Label htmlFor='checkbox'>
+         Manter-me conectado 
+        <CheckboxInput 
+          type='checkbox'
+          name='checkbox'
+          id='checkbox'
+        />
+        
+        <Check className='check'></Check>
+      </Label>
     </ContainerCheckbox>
   );
 }

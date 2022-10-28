@@ -46,3 +46,18 @@ export const ImagemContainer = styled.div `
     }
   }
 `
+
+export const After = styled.div`
+background-color: antiquewhite;
+width: 200px;
+height: 40px;
+
+&::after {
+        content: '';
+        position: absolute;
+        width: 349px;
+        right: 217px;
+        border: 1px solid ${props => props.theme.colors.secundary};
+      }
+
+`

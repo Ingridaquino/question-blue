@@ -1,12 +1,19 @@
-import React, { useState, useCallback} from 'react';
+import React, { useState, useCallback, useContext} from 'react';
 import { FormLogin, Title } from './styles';
 import InputText from './inputText/InputText';
 import InputCheckbox from './inputCheckbox/InputCheckbox';
 import { userLogin } from '../../models/UserLogin';
 import { listUser } from '../../json/ListUser';
 import Button from '../button/Button';
+import { ThemeContext } from "styled-components";
+
+
 
 function Form(){
+  const { colors, title } = useContext(ThemeContext)
+
+
+
 
   const[dados, setDados] = useState<userLogin>({
     email: '',
@@ -51,7 +58,7 @@ function Form(){
                               
   return (
       <FormLogin>
-        <span> Não tem conta? Cadastrar</span>
+        <span color={colors.subText}> Não tem conta? Cadastrar</span>
 
         <Title> Login </Title>
 

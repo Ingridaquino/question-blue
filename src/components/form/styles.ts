@@ -12,18 +12,18 @@ span {
    display: block;
    font-size: 0.75rem;
    text-align: end;
-   color:#7C7C8A;
+   color:${props => props.theme.colors.subText}
 }
 
 
 form {
   margin-top: 3rem;
 
-  label {
+  & > label {
     margin-top: 12px;
     font-size: 1rem;
     font-weight: 600;
-    color:#E1E1E6;
+    color:${props => props.theme.colors.text};
     line-height: 17px;
   }
 

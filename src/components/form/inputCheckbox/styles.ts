@@ -1,47 +1,58 @@
 import styled from "styled-components";
 
 export const ContainerCheckbox = styled.div`
-    display: flex;
-    /* flex-direction: row; */
-    align-items: center;
-    /* justify-content: start; */
+
+  & input:checked ~ .check:after {
+    display: block;
+  }
+
+  & .check:after {
+    left: 0.75em;
+    top: 0.45em;
+    width: 0.25em;
+    height: 0.5em;
+    border: solid ${props => props.theme.colors.sky};
+    border-width: 0 0.15em 0.15em 0;
+    transform: rotate(45deg);
+    margin: 0 auto;
+  }  
+  `;
+
+
+export const Label = styled.label`
+    position: relative; 
+    cursor: pointer;
+    user-select: none;
     padding: 1rem;
-    position: relative;
-
-
-    label {
-      font-size: 16px;
-      margin-left: 12px;
-      display: block;
-      position: relative;
-      cursor: pointer;
-    }
-`;
+    margin-left: 25px;
+    font-size: 0.875rem;
+    font-weight: 400;
+`
 
 
 export const CheckboxInput = styled.input`
-    all: unset; //tira a estilizaçao padrao dele
-    width: 24px;
-    height: 24px;
-    background-color:#252B4E;
-    border-radius: 4px;
-    display: inline-block;
-    cursor: pointer;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+`;
 
-    &:checked::after{
-      /* background-color: #252B4E; */
-      top: 5px;
-      left: 9px;
-      background: yellow;
-      height: 20px;
-      width: 5px;
-      content: '';
-      border: solid white;
-      border-width: 0 3px 3px 0;
-  
-      transform:rotate(45deg);
-      -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-    }
+export const Check = styled.div`
+  margin-top: -22px;
+  background-color: ${props => props.theme.colors.secundary};
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 1.5rem;
+  width: 1.5rem;
+  transition: all 0.3s;
+  border-radius: 4px;
 
+  &:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
 `;

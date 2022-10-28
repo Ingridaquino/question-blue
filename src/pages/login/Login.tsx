@@ -1,6 +1,6 @@
 import React from "react";
 import Form from "../../components/form/Form";
-import { Container, ImagemContainer } from "./styles";
+import { After, Container, ImagemContainer } from "./styles";
 import Image from './../../assets/question.svg'
 
 function Login() {
@@ -14,6 +14,8 @@ function Login() {
       </ImagemContainer>
 
       <Form />
+
+      <After></After>
 
     </Container>
   );
