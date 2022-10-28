@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-export const Base = createGlobalStyle `
+export const Base = createGlobalStyle`
 
   * {
     margin: 0;
@@ -10,11 +10,11 @@ export const Base = createGlobalStyle `
   }
 
   body {
-    background-color:${props => props.theme.colors.background};
+    background-color:${(props) => props.theme.colors.background};
     font-size: 14px;
-    color:${props => props.theme.colors.text};
+    color:${(props) => props.theme.colors.text};
     font-family: 'Inter', sans-serif; 
   }
 
 
-`
+`;
