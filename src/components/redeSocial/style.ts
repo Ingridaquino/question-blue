@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ContainerSocial = styled.div`
   margin: 0 auto;
-  padding: 2rem 4rem;
+  padding: 1rem 4rem;
   text-align: start;
 
   & > p {
@@ -26,18 +26,26 @@ export const ContainerSocial = styled.div`
     position: absolute;
     width: 22%;
     right: 16.6%;
-    top: 70%;
+    top: 73%;
     border: 1px solid ${(props) => props.theme.colors.secundary};
   }
 
   @media (min-width: 2220px) {
     &::before {
-      width: 18rem;
-      right: 11.2rem;
-      top: 34rem;
+      width: 23rem;
+      right: 48rem;
+      top: 38rem;
+    }
+
+    & {
+      width: 100%;
+      padding-top: 3rem;
+    }
+
+    & > div {
+      width: 100%;
     }
   }
-
 
   @media (max-width: 980px){
     & {
@@ -50,9 +58,15 @@ export const ContainerSocial = styled.div`
       width: 100%;
       margin-right: 10rem;
       margin: 0 auto;
-      
+    }
+
+    &::before {
+      width: 14rem;
+      right: 26.6%;
+      top: 74%;
     }
   }
+
 `;
 
 export const ContainerRede = styled.div`
@@ -76,8 +90,7 @@ export const ContainerRede = styled.div`
     color: ${(props) => props.theme.colors.text};
   }
 
-
-  @media (max-width: 980px){
+  @media (max-width: 980px) {
     & {
       width: 120px;
       padding: 1rem;

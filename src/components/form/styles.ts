@@ -6,7 +6,7 @@ export const Title = styled.h1`
 `;
 
 export const FormLogin = styled.div`
-    padding: 1rem 5rem;
+    padding: 2rem 5rem;
 
 span {
    display: block;
@@ -33,7 +33,6 @@ form {
 @media(min-width: 2220px){
   &{
     padding: 1rem 2rem;
-    background-color: red;
   }
 }
 

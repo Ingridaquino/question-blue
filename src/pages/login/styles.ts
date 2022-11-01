@@ -8,7 +8,6 @@ export const Container = styled.div`
   grid-template-columns: 1fr 490px;
   align-items: center;
   padding: 0 3rem 9rem;
-  /* padding: 1rem 5rem; */
 
   gap: 2rem;
   margin: 0 auto;
@@ -29,21 +28,20 @@ export const Container = styled.div`
       margin: 0 auto;
     }
   }
+
+  //desktop grande
+  @media (min-width: 2200px) {
+    & {
+        padding: 0 2rem 1rem;
+    }
+
+  }
 `;
 
 
 export const ImagemContainer = styled.div`
   width: 100%;
   height: 100%;
-
-  &::after {
-    content: "";
-    position: absolute;
-    height: 100%;
-    top: -1px;
-    left: 707px;
-    border: 1px solid ${(props) => props.theme.colors.sky};
-  }
 
   img {
     display: block;
