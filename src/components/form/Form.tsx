@@ -60,7 +60,7 @@ function Form(){
       <FormLogin>
         <span color={colors.subText}> Não tem conta? Cadastrar</span>
 
-        <Title> Login </Title>
+        {/* <Title> Login </Title> */}
 
         <form onSubmit={handlaSubmit} id="formLogin">
 

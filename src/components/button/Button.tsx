@@ -1,13 +1,13 @@
 import React, { ButtonHTMLAttributes } from "react";
-import { ButtonContainer, Submit } from "./style";
+import { Submit } from "./style";
 
 interface buttonProps extends ButtonHTMLAttributes<HTMLButtonElement> {}
 
 const Button: React.FC<buttonProps> = (props) => {
   return (
-    <ButtonContainer>
+    <div>
       <Submit {...props}></Submit>
-    </ButtonContainer>
+    </div>
   );
 };
 

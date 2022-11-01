@@ -14,7 +14,7 @@ function RedeSocial() {
         </ContainerRede>
 
         <ContainerRede>
-          <FacebookLogo size={24} className="icon-rede" />
+          <FacebookLogo size={28} className="icon-rede" />
           <span>Facebook</span>
         </ContainerRede>
       </div>

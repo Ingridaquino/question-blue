@@ -14,6 +14,7 @@ export const Base = createGlobalStyle`
     font-size: 14px;
     color:${(props) => props.theme.colors.text};
     font-family: 'Inter', sans-serif; 
+    overflow: hidden;
   }
 
 
