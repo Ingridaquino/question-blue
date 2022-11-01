@@ -6,6 +6,7 @@ import { userLogin } from '../../models/UserLogin';
 import { listUser } from '../../json/ListUser';
 import Button from '../button/Button';
 import { ThemeContext } from "styled-components";
+import RedeSocial from '../redeSocial/RedeSocial';
 
 
 
@@ -101,6 +102,8 @@ function Form(){
         </form>
 
         <Button type='submit' form='formLogin' disabled={isSubmitDisabled()}>Entrar</Button>
+        <RedeSocial />
+
       </FormLogin>
   );
 };

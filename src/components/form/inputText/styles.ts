@@ -14,6 +14,15 @@ export const InputContainer = styled.div`
     margin-top: 6px;
     color: ${(props) => props.theme.colors.subText};
   }
+
+
+ @media (max-width:980px){
+   & > .icon {
+    color: green;
+    font-size: 40rem !important;
+    display: none;
+   }
+ }
 `;
 
 export const Input = styled.input`

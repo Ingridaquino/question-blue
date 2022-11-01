@@ -13,7 +13,6 @@ function Login() {
 
       <div>
         <Form />
-        <RedeSocial />
       </div>
     </Container>
   );

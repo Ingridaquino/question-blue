@@ -5,17 +5,18 @@ import { ContainerRede, ContainerSocial } from "./style";
 function RedeSocial() {
   return (
     <ContainerSocial>
+      <div className="before"></div>
       <p>Ou entre com </p>
 
       <div>
         <ContainerRede>
           <GoogleLogo size={24} className="icon-rede" />
-          <span>Google</span>
+          <p>Google</p>
         </ContainerRede>
 
         <ContainerRede>
           <FacebookLogo size={28} className="icon-rede" />
-          <span>Facebook</span>
+          <p>Facebook</p>
         </ContainerRede>
       </div>
     </ContainerSocial>

@@ -6,7 +6,10 @@ export const Title = styled.h1`
 `;
 
 export const FormLogin = styled.div`
+    margin: 2rem auto;
     padding: 2rem 5rem;
+    width: 100%;
+    max-width: 490px;
 
 span {
    display: block;
@@ -39,7 +42,6 @@ form {
 
 @media(max-width: 980px){
   & {
-    margin: 1rem 3rem;
     padding: 1rem 2rem;
 
     span {
