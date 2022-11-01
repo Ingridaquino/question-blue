@@ -11,12 +11,27 @@ export const FormLogin = styled.div`
     width: 100%;
     max-width: 490px;
 
-span {
+
+& > p {
    display: block;
    font-size: 0.75rem;
    text-align: end;
    color:${props => props.theme.colors.subText}
 }
+
+.decoretor {
+  font-weight: bold;
+  text-decoration: none;
+  color: ${props => props.theme.colors.sky};
+  transition:  color 0.1s;
+}
+
+.decoretor:hover {
+  color: ${props => props.theme.colors.sea};
+}
+
+
+
 
 
 form {
@@ -44,7 +59,7 @@ form {
   & {
     padding: 1rem 2rem;
 
-    span {
+    & > p {
       position: absolute;
       top: 50px;
       right: 30px;
