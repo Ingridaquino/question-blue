@@ -6,7 +6,7 @@ export const Title = styled.h1`
 `;
 
 export const FormLogin = styled.div`
-    padding: 1rem 5em;
+    padding: 2rem 5rem;
 
 span {
    display: block;
@@ -32,15 +32,15 @@ form {
 
 @media(min-width: 2220px){
   &{
-    padding: 4rem 2rem;
+    padding: 1rem 2rem;
   }
 }
 
 
-@media(max-width: 996px){
-    & {
-    margin-top: 4px;
-    width: 80%;
+@media(max-width: 980px){
+  & {
+    margin: 1rem 3rem;
+    padding: 1rem 2rem;
 
     span {
       position: absolute;

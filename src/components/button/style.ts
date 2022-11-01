@@ -1,17 +1,10 @@
 import styled from "styled-components";
 
-export const ButtonContainer = styled.div`
-  padding: 0rem rem;
-  
-  
-  `
-
-
 export const Submit = styled.button`
     width: 100%;
     padding: 0.90rem 1rem;
     height: 57px;
-    margin-top: 30px;
+    margin-top: 9px;
     font-weight: bold;
     font-size: 1rem;
     font-family: 'Inter';
