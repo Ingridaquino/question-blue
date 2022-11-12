@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import { DefaultTheme, ThemeProvider } from 'styled-components'
 import { Base } from './styles/global'
+import Cadastro from './pages/cadastro/Cadastro';
 
 export function App() {
   // const theme = useState<DefaultTheme>
@@ -29,6 +30,8 @@ export function App() {
                 </main>
               }
             />
+
+            <Route path="/cadastro" element={<Cadastro />}/>
           </Routes>
         </div>
       </ThemeProvider>

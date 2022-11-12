@@ -5,12 +5,11 @@ export const Title = styled.h1`
     margin-top: 3rem;
 `;
 
-export const FormLogin = styled.div`
+export const RegistForm = styled.div`
     margin: 2rem auto;
-    padding: 2rem 5rem;
-    width: 100%;
-    max-width: 490px;
-
+    padding: 2rem 3rem;
+    width: 87%;
+    max-width: 790px;
 
 & > p {
    display: block;
@@ -31,22 +30,16 @@ export const FormLogin = styled.div`
 }
 
 
-
-
-
 form {
-  margin-top: 3rem;
+  margin-top: 1.6rem;
 
-  & > label {
-    margin-top: 12px;
-    font-size: 1rem;
-    font-weight: 600;
-    color:${props => props.theme.colors.text};
-    line-height: 17px;
+  & .termos {
+    text-align: center;
+    margin: 0.233rem 2rem;
   }
-
-
 }
+
+
 
 @media(min-width: 2220px){
   &{
