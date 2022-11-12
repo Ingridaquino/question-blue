@@ -1,5 +1,5 @@
 import React from "react";
-import Form from "../../components/form/Form";
+import Form from "../../components/form/formLogin/Form";
 import { Container, ImagemContainer } from "./styles";
 import Image from "./../../assets/question.svg";
 import RedeSocial from "../../components/redeSocial/RedeSocial";

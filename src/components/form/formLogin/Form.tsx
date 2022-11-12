@@ -1,12 +1,12 @@
 import React, { useState, useCallback, useContext } from "react";
-import { FormLogin, Title } from "./styles";
-import InputText from "./inputText/InputText";
-import InputCheckbox from "./inputCheckbox/InputCheckbox";
-import { userLogin } from "../../models/UserLogin";
-import { listUser } from "../../json/ListUser";
-import Button from "../button/Button";
+import { FormLogin } from "./styles";
+import InputText from "../inputText/InputText";
+import InputCheckbox from "../inputCheckbox/InputCheckbox";
+import { userLogin } from "../../../models/UserLogin";
+import { listUser } from "../../../json/ListUser";
+import Button from "../../button/Button";
 import { ThemeContext } from "styled-components";
-import RedeSocial from "../redeSocial/RedeSocial";
+import RedeSocial from "../../redeSocial/RedeSocial";
 import { Link, NavLink } from "react-router-dom";
 
 function Form() {
@@ -49,16 +49,6 @@ function Form() {
 
   return (
     <FormLogin>
-      <p color={colors.subText}>
-        {" "}
-        Não tem conta?{" "}
-        <NavLink to="/cadastro" className='decoretor'>
-          <span>Cadastre-se</span>{" "}
-        </NavLink>
-      </p>
-
-      {/* <Title> Login </Title> */}
-
       <form onSubmit={handlaSubmit} id="formLogin">
         <label htmlFor="email">
           Endereço de e-mail
